@@ -1,10 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
 import logger from 'redux-logger';
-import missions from './Missions/missionsReducer';
+import missionsReducer from './Missions/missionsReducer';
 
 const store = configureStore({
   reducer: {
-    missions,
+    missions: missionsReducer,
   },
 
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
