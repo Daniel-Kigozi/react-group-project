@@ -1,5 +1,7 @@
+import MissionProfile from './missionProfile';
+
 const Profile = () => (
-  <h1>Welcome user, This is a Profile Page!</h1>
+  <MissionProfile />
 );
 
 export default Profile;
