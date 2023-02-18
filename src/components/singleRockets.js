@@ -14,7 +14,7 @@ const Rocket = (rocket) => {
 
   return (
     <div className="rocketContainer" id={id}>
-      <img className="rocketImage" alt="rocket..." src={flickrImages} />
+      <img className="rocketImage" alt="rocket...." src={flickrImages} />
       <div className="rocketDetails">
         <h2 className="rocketName">{rocketName}</h2>
         <p className="rocketDescription">
