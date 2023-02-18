@@ -108,12 +108,14 @@
   justify-content: space-around;
 }
 
-.rocketListContainer, .our-missions {
+.rocketListContainer,
+.our-missions {
   width: 400px;
   margin-top: 10px;
 }
 
-.rocketList, .reservion {
+.rocketList,
+.reservion {
   list-style-type: none;
   border: 0.5px solid rgba(128, 128, 128, 0.763);
   padding: 12px;
