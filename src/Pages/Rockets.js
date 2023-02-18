@@ -6,13 +6,14 @@ import { fetchRockets } from '../Redux/Rockets/rocketSlice';
 
 const Rockets = () => {
   const rocketList = useSelector((state) => state.rockets);
-  const state = useSelector((state) => state.rockets);
+  // const state = useSelector((state) => state.rockets);
   const dispatch = useDispatch();
+
   useEffect(() => {
-    if (state.length === 0) {
+    if (rocketList.length === 0) {
       dispatch(fetchRockets());
     }
-  }, [dispatch, state]);
+  }, [dispatch, rocketList]);
 
   return (
     <div className="allRocketsContainer">
