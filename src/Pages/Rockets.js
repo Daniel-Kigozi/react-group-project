@@ -1,23 +1,19 @@
-import React, { useEffect } from 'react';
-// import uuid from 'react-uuid';
-import { useDispatch, useSelector } from 'react-redux';
+import React, { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 import Rocket from '../components/singleRockets';
-import { fetchRockets } from '../Redux/Rockets/rocketSlice';
 
 const Rockets = () => {
+  const [rocketItem, setRocketItem] = useState([]);
   const rocketList = useSelector((state) => state.rockets);
+
   // const state = useSelector((state) => state.rockets);
-  const dispatch = useDispatch();
-
   useEffect(() => {
-    if (rocketList.length === 0) {
-      dispatch(fetchRockets());
-    }
-  }, [dispatch, rocketList]);
-
+    setRocketItem(rocketList);
+  }, [rocketList, rocketItem]);
+  // console.log(rocketItem);
   return (
     <div className="allRocketsContainer">
-      {rocketList.map((item) => (
+      {rocketItem.map((item) => (
         <Rocket
           key={item.id}
           id={item.id}
@@ -30,5 +26,4 @@ const Rockets = () => {
     </div>
   );
 };
-
 export default Rockets;
