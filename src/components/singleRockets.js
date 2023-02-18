@@ -18,7 +18,6 @@ const Rocket = (rocket) => {
       <div className="rocketDetails">
         <h2 className="rocketName">{rocketName}</h2>
         <p className="rocketDescription">
-          {description}
           <span
             className={reserved ? 'show' : 'hide'}
           >

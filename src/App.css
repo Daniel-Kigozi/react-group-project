@@ -40,8 +40,57 @@
   cursor: pointer;
 }
 
+.active {
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+.deActive {
+  text-decoration: none;
+}
+
+.allRocketsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+}
+
+.rocketContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.rocketImage {
+  width: 200px;
+  height: 200px;
+}
+
+.rocketDescription {
+  margin-top: 10px;
+}
+
+.reserveBtn {
+  padding: 10px;
+  background-color: blue;
+  border-radius: 4px;
+  border: blue;
+  color: white;
+  margin-top: 15px;
+}
+
+.cancelReserved {
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  border: 1px solid rgb(75, 75, 75);
+  color: rgba(104, 104, 104, 0.73);
+  margin-top: 15px;
+}
+
 .show {
-  display: inline;
+  display: inline-block;
   background-color: rgb(6, 158, 193);
   color: rgb(255, 255, 255);
   padding: 1px;
@@ -51,4 +100,21 @@
 
 .hide {
   display: none;
+}
+
+.rocketListDiv {
+  padding: 24px;
+  float: right;
+}
+
+.rocketListContainer {
+  width: 400px;
+  margin-top: 10px;
+}
+
+.rocketList {
+  list-style-type: none;
+  border: 0.5px solid rgba(128, 128, 128, 0.763);
+  padding: 12px;
+  border-radius: 4px;
 }
