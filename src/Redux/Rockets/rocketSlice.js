@@ -26,6 +26,18 @@ const rocketSlice = createSlice({
       state.push(...arr);
     });
   },
+
+  reducers: {
+    reserveRocket: (state, action) => {
+      const newState = state.map((rocket) => {
+        if (rocket.id !== action.payload) {
+          return rocket;
+        }
+        return { ...rocket, reserved: !rocket.reserved };
+      });
+      return newState;
+    },
+  },
 });
 
 export const { reserveRocket } = rocketSlice.actions;

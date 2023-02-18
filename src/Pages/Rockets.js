@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import uuid from 'react-uuid';
 import { useDispatch, useSelector } from 'react-redux';
 import Rocket from '../components/singleRockets';
 import { fetchRockets } from '../Redux/Rockets/rocketSlice';
@@ -17,8 +18,8 @@ const Rockets = () => {
     <div className="allRocketsContainer">
       {rocketList.map((item) => (
         <Rocket
-          key={item.id}
-          id={item.id}
+          key={uuid()}
+          id={uuid()}
           flickrImages={item.flickrImages}
           rocketName={item.rocketName}
           description={item.description}

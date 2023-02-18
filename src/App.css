@@ -39,3 +39,16 @@
   color: blue;
   cursor: pointer;
 }
+
+.show {
+  display: inline;
+  background-color: rgb(6, 158, 193);
+  color: rgb(255, 255, 255);
+  padding: 1px;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+.hide {
+  display: none;
+}

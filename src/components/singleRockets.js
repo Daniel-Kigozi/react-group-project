@@ -17,12 +17,20 @@ const Rocket = (rocket) => {
       <img className="rocketImage" alt="rocket..." src={flickrImages} />
       <div className="rocketDetails">
         <h2 className="rocketName">{rocketName}</h2>
-        <p className="rocketDescription">{description}</p>
+        <p className="rocketDescription">
+          {description}
+          <span
+            className={reserved ? 'show' : 'hide'}
+          >
+            Reserved
+          </span>
+          {description}
+        </p>
 
         <button
           type="button"
-          className="reserveBtn"
           onClick={handleReserve}
+          className={reserved ? 'cancelReserved' : 'reserveBtn'}
         >
           {reserved ? 'Cancel Reservation' : 'Reserve Rocket'}
         </button>
