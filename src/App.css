@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid grey;
+}
+
+.logoDiv {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  margin-left: 24px;
+  align-items: center;
+}
+
+.logoImage {
+  width: 50px;
+  height: 50px;
+}
+
+.NavUl {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-right: 24px;
+  padding: 0;
+}
+
+.navList {
+  list-style-type: none;
+  font-size: 18px;
+  color: blue;
+  cursor: pointer;
+}
+
+.active {
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+.deActive {
+  text-decoration: none;
+}
+
+.allRocketsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+}
+
+.rocketContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.rocketImage {
+  width: 200px;
+  height: 200px;
+}
+
+.rocketDescription {
+  margin-top: 10px;
+}
+
+.reserveBtn {
+  padding: 10px;
+  background-color: blue;
+  border-radius: 4px;
+  border: blue;
+  color: white;
+  margin-top: 15px;
+}
+
+.cancelReserved {
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  border: 1px solid rgb(75, 75, 75);
+  color: rgba(104, 104, 104, 0.73);
+  margin-top: 15px;
+}
+
+.show {
+  display: inline-block;
+  background-color: rgb(6, 158, 193);
+  color: rgb(255, 255, 255);
+  padding: 1px;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+.rocketListDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.rocketListContainer,
+.our-missions {
+  width: 400px;
+  margin-top: 10px;
+}
+
+.rocketList,
+.reservion {
+  list-style-type: none;
+  border: 0.5px solid rgba(128, 128, 128, 0.763);
+  padding: 12px;
+  border-radius: 4px;
+}
+
+table,
+th,
+td {
+  border: solid 1px #d1d1d1;
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: start;
+}
+
+table {
+  margin: 20px 80px;
+}
+
+.mission-name {
+  vertical-align: top;
+  width: 15%;
+  font-weight: bold;
+}
+
+.member-status-cell {
+  width: 15%;
+  text-align: center;
+}
+
+.member-status-cell span {
+  color: #fff;
+  background-color: #808080;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.member-status-cell span.active-badge {
+  background-color: #25b1bb;
+}
+
+.btn-allover {
+  width: 15%;
+  text-align: center;
+}
+
+.btn-allover button {
+  color: #808080;
+  background-color: #fff;
+  padding: 10px;
+  border: solid 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-allover button.danger-btn {
+  color: #f00;
+}
+
+.missions-profile {
+  margin: 1em 0 0 1.2em;
+  font-weight: 500;
+}
+
+.myRocketsHeader {
+  margin-top: 20px;
+}
