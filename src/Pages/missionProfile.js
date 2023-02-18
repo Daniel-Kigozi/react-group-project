@@ -6,12 +6,12 @@ const MissionProfile = () => {
     .filter((mission) => mission.reserved);
 
   return (
-    <div className="reserve-wrapper">
-      <h2>My Missions</h2>
-      <div className="reserve-container">
+    <div className="missions-profile">
+      <h1>My Missions</h1>
+      <div className="our-missions">
         { missions.length === 0 && <p>You have no reserved missions</p>}
         {missions.map((mission) => (
-          <h3 key={mission.mission_id} className="reserve-item">{mission.mission_name}</h3>
+          <h3 key={mission.mission_id} className="reservion">{mission.mission_name}</h3>
         ))}
       </div>
     </div>

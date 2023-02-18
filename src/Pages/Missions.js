@@ -27,7 +27,7 @@ const Missions = () => {
               <td className="mission-name">{mission.mission_name}</td>
               <td className="mission-description">{mission.description}</td>
               <td className="member-status-cell"><span className={mission.reserved ? 'active-badge' : ''}>{mission.reserved ? 'Active Member' : 'NOT A MEMBER'}</span></td>
-              <td className="status-btn-cell">
+              <td className="btn-allover">
                 <button
                   type="button"
                   className={mission.reserved ? 'danger-btn' : ''}
