@@ -4,13 +4,12 @@ import Rocket from '../components/singleRockets';
 
 const Rockets = () => {
   const [rocketItem, setRocketItem] = useState([]);
-  const rocketList = useSelector((state) => state.rockets);
+  const { rocketlist } = useSelector((state) => state.rockets);
 
-  // const state = useSelector((state) => state.rockets);
   useEffect(() => {
-    setRocketItem(rocketList);
-  }, [rocketList, rocketItem]);
-  // console.log(rocketItem);
+    setRocketItem(rocketlist);
+  }, [rocketlist, rocketItem]);
+
   return (
     <div className="allRocketsContainer">
       {rocketItem.map((item) => (
